@@ -1,0 +1,542 @@
+/* Schriftarten Import */
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light/opensans-light.eot');
+  src: url('../fonts/opensans-light/opensans-light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light/opensans-light.woff') format('woff'),
+    url('../fonts/opensans-light/opensans-light.ttf') format('truetype'),
+    url('../fonts/opensans-light/opensans-light.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular/opensans-regular.eot');
+  src: url('../fonts/opensans-regular/opensans-regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-regular/opensans-regular.woff') format('woff'),
+    url('../fonts/opensans-regular/opensans-regular.ttf') format('truetype'),
+    url('../fonts/opensans-regular/opensans-regular.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+}
+
+/* IE Fix */
+a img {
+  border: 0;
+}
+
+/* Schriftarten Styles */
+h1 {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.8em;
+  letter-spacing: .1em;
+  color: #fff;
+}
+
+h2 {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2.6em;
+  color: #fff;
+}
+
+p {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+}
+
+a {
+  text-decoration: none;
+  color: #2980b9;
+}
+
+a:hover {
+  color: #3498db;
+}
+
+.head > h2 {
+  margin-top: 60px;
+}
+
+nav {
+  margin: 20px 0 25px;
+}
+
+nav > a {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: rgba(255,255,255,0.6);
+  line-height: 60px;
+  padding: 10px 20px;
+  border: 2px solid rgba(255,255,255,0);
+}
+
+nav > a:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+header > a,
+.additional-content {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.6);
+  padding: 5px 10px;
+  border: 2px solid rgba(255,255,255,0);
+}
+
+header > a:hover,
+.additional-content:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.home {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: rgba(255,255,255,0.6);
+  padding: 5px 10px;
+  border: 2px solid rgba(255,255,255,0.4);
+}
+
+.home:hover {
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.8);
+}
+
+/* Layout Startseite */
+body {
+  background: #ecf0f1;
+}
+
+.fallback {
+  background: #34495e;
+}
+
+.wrapper {
+  height: 100vh;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 90px 20px;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.extra-content {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 230px;
+  color: rgba(255,255,255,0.6);
+}
+
+.extra-content > p {
+  text-align: right;
+  padding: 5px 10px;
+}
+
+.dropdown,
+.hide {
+  display: none;
+}
+
+.extra-content:hover {
+  color: #fff;
+}
+
+.extra-content:hover .dropdown {
+  display: block;
+  position: absolute;
+  text-align: right;
+  padding: 5px 8px;
+  width: 210px;
+  cursor: text;
+  color: #fff;
+}
+
+.chat {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.chat > a {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+}
+
+.chat > a:hover {
+  color: #fff;
+}
+
+.chat2 {
+  position: absolute;
+  top: 150px;
+  right: 10px;
+}
+
+.chat2 > a {
+  font-family: 'open_sansregular', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: rgba(255,255,255,0.6);
+  border: 2px solid rgba(255,255,255,0);
+}
+
+.chat2 > a:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Layout Unterseiten */
+.wrapper, header {
+  background: #34495e;
+  background: linear-gradient(0deg, #9b59b6, #4aa3df, #1abc9c, #2ecc71, #f1c40f, #e67e22, #e74c3c);
+  background-size: 1400% 1400%;
+
+  -webkit-animation: Animation 60s ease infinite;
+  -moz-animation: Animation 60s ease infinite;
+  -o-animation: Animation 60s ease infinite;
+  animation: Animation 60s ease infinite;
+}
+
+.head {
+  max-width: 960px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+header > a,
+.home {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+section {
+  max-width: 960px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.space {
+  height: 50px;
+}
+
+.additional-content {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.devpic {
+  display: block;
+  max-width: 512px;
+  max-height: 250px;
+}
+
+.devpic > img {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  display: block;
+  max-width: 960px;
+}
+
+.image > img {
+  width: 100%;
+  height: 100%;
+}
+
+.smallimage {
+  display: block;
+  float: left;
+  max-width: 300px;
+}
+
+.smallimage > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Icons */
+.icons {
+  margin: 0 auto;
+  max-width: 241px;
+}
+
+#github {
+  display: block;
+  float: left;
+  margin: 10px 20px 0 0;
+  opacity: 0.6;
+}
+
+#behance {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  opacity: 0.6;
+}
+
+#insta {
+  display: block;
+  float: left;
+  margin: 8px 20px 0 0;
+  opacity: 0.6;
+}
+
+#soundcloud {
+  display: block;
+  float: left;
+  margin-top: -9px;
+  opacity: 0.6;
+}
+
+#github:hover, #behance:hover, #insta:hover, #soundcloud:hover {
+  opacity: 1;
+}
+
+.description {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  letter-spacing: .24em;
+  color: rgba(255,255,255,0.8);
+  margin-top: 24px;
+}
+
+hr {
+  border: 0;
+  height: 5px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+}
+
+.space2 {
+  padding: 50px 0 40px 0;
+}
+
+.floatleft {
+  float: left;
+}
+
+.textfloat {
+  float: left;
+  max-width: 430px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.textfloat2 {
+  float: left;
+  max-width: 400px;
+  box-sizing: border-box;
+  padding: 50px;
+}
+
+.bigtext {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.8em;
+  line-height: 50px;
+}
+
+.bigtext2 {
+  font-family: 'open_sanslight', Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.6em;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 980px) {
+  .textfloat2 {
+    max-width: 512px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .mobilehide {
+    display: none;
+  }
+
+  .bigtext {
+    font-size: 1.6em;
+    line-height: 40px;
+  }
+}
+
+/* Color Animation */
+@-webkit-keyframes Animation {
+    0% {background-position: 50% 0%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 50% 0%;}
+}
+@-moz-keyframes Animation {
+    0% {background-position: 50% 0%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 50% 0%;}
+}
+@-o-keyframes Animation {
+    0% {background-position: 50% 0%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 50% 0%;}
+}
+@keyframes Animation {
+    0% {background-position: 50% 0%;}
+    50% {background-position: 50% 100%;}
+    100% {background-position: 50% 0%;}
+}
+
+/* Fly In Animation */
+.animated {
+  -webkit-animation-duration: .3s;
+  animation-duration: .3s;
+}
+
+.animated2 {
+  -webkit-animation-duration: .6s;
+  animation-duration: .6s;
+}
+
+.animated3 {
+  -webkit-animation-duration: .9s;
+  animation-duration: .9s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
