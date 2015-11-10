@@ -291,7 +291,7 @@ section {
 
 .halfimage {
   display: block;
-  max-width: 480px;
+  max-width: 460px;
 }
 
 .halfimage > img {
