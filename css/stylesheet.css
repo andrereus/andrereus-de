@@ -289,6 +289,16 @@ section {
   height: 100%;
 }
 
+.halfimage {
+  display: block;
+  max-width: 480px;
+}
+
+.halfimage > img {
+  width: 100%;
+  height: 100%;
+}
+
 .smallimage {
   display: block;
   float: left;
