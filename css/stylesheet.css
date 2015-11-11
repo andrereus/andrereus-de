@@ -311,9 +311,14 @@ section {
 }
 
 /* Icons */
-.icons {
+.icons1 {
   margin: 0 auto;
   max-width: 241px;
+}
+
+.icons2 {
+  margin: 0 auto;
+  max-width: 48px;
 }
 
 #github {
@@ -344,7 +349,12 @@ section {
   opacity: 0.6;
 }
 
-#github:hover, #behance:hover, #insta:hover, #soundcloud:hover {
+#twit {
+  display: block;
+  opacity: 0.6;
+}
+
+#github:hover, #behance:hover, #insta:hover, #soundcloud:hover, #twit:hover {
   opacity: 1;
 }
 
